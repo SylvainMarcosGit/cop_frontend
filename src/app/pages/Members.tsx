@@ -194,8 +194,8 @@ export function Members() {
               <Card key={stat.label}>
                 <CardContent className="pt-6">
                   <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                      <Icon className="w-5 h-5 text-blue-600" />
+                    <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
+                      <Icon className="w-5 h-5 text-primary" />
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-gray-900">
@@ -369,7 +369,7 @@ export function Members() {
                   <CardContent className="pt-6">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-4 flex-1">
-                        <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white text-xl font-bold">
+                        <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl font-bold">
                           {index + 1}
                         </div>
                         <div className="relative">
@@ -402,7 +402,7 @@ export function Members() {
                         </div>
                       </div>
                       <div className="text-right ml-4">
-                        <div className="text-3xl font-bold text-blue-600">
+                        <div className="text-3xl font-bold text-primary">
                           {member.contributions}
                         </div>
                         <div className="text-sm text-gray-500">

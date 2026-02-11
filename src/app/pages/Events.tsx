@@ -40,7 +40,7 @@ export function Events() {
       time: "14h00 - 17h00",
       location: "Salle A - Format hybride",
       type: "Atelier",
-      badge: "bg-blue-100 text-blue-600",
+      badge: "bg-primary/20 text-primary",
       capacity: 30,
       registered: 18,
       description: "Découvrez les meilleures pratiques DevOps et apprenez à mettre en place une pipeline CI/CD robuste.",
@@ -240,7 +240,7 @@ export function Events() {
                     <div className="mb-4">
                       <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
                         <div
-                          className="h-full bg-blue-600"
+                          className="h-full bg-primary"
                           style={{
                             width: `${(event.registered / event.capacity) * 100}%`,
                           }}

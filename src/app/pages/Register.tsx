@@ -7,6 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../co
 import { Checkbox } from "../components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select";
 import { UserPlus } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export function Register() {
   const [formData, setFormData] = useState({
@@ -35,8 +36,8 @@ export function Register() {
       <Card className="w-full max-w-2xl">
         <CardHeader className="space-y-1">
           <div className="flex items-center justify-center mb-2">
-            <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-              <UserPlus className="w-6 h-6 text-white" />
+            <div className="w-16 h-16 rounded-full flex items-center justify-center overflow-hidden">
+              <img src={logo} alt="CoP Logo" className="w-full h-full object-contain" />
             </div>
           </div>
           <CardTitle className="text-2xl text-center">Créer un compte</CardTitle>
@@ -160,11 +161,11 @@ export function Register() {
                 className="text-sm font-normal leading-relaxed cursor-pointer"
               >
                 J'accepte les{" "}
-                <Link to="#" className="text-blue-600 hover:underline">
+                <Link to="#" className="text-primary hover:underline">
                   conditions d'utilisation
                 </Link>{" "}
                 et la{" "}
-                <Link to="#" className="text-blue-600 hover:underline">
+                <Link to="#" className="text-primary hover:underline">
                   politique de confidentialité
                 </Link>{" "}
                 de la plateforme
@@ -179,7 +180,7 @@ export function Register() {
               Vous avez déjà un compte ?{" "}
               <Link
                 to="/login"
-                className="text-blue-600 hover:text-blue-700 hover:underline font-medium"
+                className="text-primary hover:text-primary hover:underline font-medium"
               >
                 Se connecter
               </Link>

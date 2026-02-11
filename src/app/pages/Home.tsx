@@ -2,11 +2,11 @@ import { Link } from "react-router";
 import { Button } from "../components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
-import { 
-  Users, 
-  Calendar, 
-  BookOpen, 
-  TrendingUp, 
+import {
+  Users,
+  Calendar,
+  BookOpen,
+  TrendingUp,
   MessageSquare,
   Award,
   ArrowRight,
@@ -62,18 +62,12 @@ export function Home() {
       excerpt: "Plus de 40 participants pour un atelier enrichissant sur les architectures cloud modernes.",
       category: "Cloud",
     },
-    {
-      title: "Lancement du programme de mentorat",
-      date: "1 février 2026",
-      excerpt: "Inscrivez-vous pour devenir mentor ou trouvez votre mentor dans la communauté.",
-      category: "Communauté",
-    },
   ];
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white">
+      <section className="relative text-white" style={{ background: 'linear-gradient(135deg, var(--primary), var(--primary-variant))' }}>
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -85,26 +79,26 @@ export function Home() {
               <h1 className="text-4xl lg:text-5xl font-bold mb-6">
                 Communauté de Pratiques pour les professionnels IT
               </h1>
-              <p className="text-xl text-blue-100 mb-8">
+              <p className="text-xl text-white/90 mb-8">
                 Rejoignez une communauté dynamique et collaborative qui favorise
                 l'échange de connaissances, l'apprentissage continu et
                 l'innovation dans le secteur informatique.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/register">
-                  <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
+                  <Button size="lg" className="bg-white text-primary hover:bg-white/50">
                     Rejoindre la communauté
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
                 </Link>
                 <Link to="/events">
-                  <Button
+                  {/*  <Button
                     size="lg"
                     variant="outline"
                     className="border-white text-white hover:bg-white/10"
                   >
                     Voir les événements
-                  </Button>
+                  </Button>*/}
                 </Link>
               </div>
             </div>
@@ -132,8 +126,8 @@ export function Home() {
                   key={stat.label}
                   className="flex flex-col items-center text-center p-4"
                 >
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-3">
-                    <Icon className="w-6 h-6 text-blue-600" />
+                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
+                    <Icon className="w-6 h-6 text-primary" />
                   </div>
                   <div className="text-3xl font-bold text-gray-900 mb-1">
                     {stat.value}
@@ -162,8 +156,8 @@ export function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card>
               <CardHeader>
-                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-2">
-                  <Users className="w-5 h-5 text-blue-600" />
+                <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center mb-2">
+                  <Users className="w-5 h-5 text-primary" />
                 </div>
                 <CardTitle>Espace dynamique</CardTitle>
               </CardHeader>
@@ -344,18 +338,17 @@ export function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">
-            Prêt à rejoindre la communauté ?
+            Une question ? Un projet ?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Inscrivez-vous dès maintenant pour accéder aux événements, ressources
-            et échanger avec d'autres professionnels IT
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            Notre équipe est à votre écoute pour vous accompagner et répondre à toutes vos demandes.
           </p>
-          <Link to="/register">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
-              Créer mon compte
+          <Link to="/contact">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/50">
+              Nous contacter
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </Link>

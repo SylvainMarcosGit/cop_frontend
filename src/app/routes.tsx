@@ -8,6 +8,7 @@ import { Profile } from "./pages/Profile";
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
 import { NotFound } from "./pages/NotFound";
+import { Contact } from "./pages/Contact";
 
 export const router = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ export const router = createBrowserRouter([
       { path: "profile", Component: Profile },
       { path: "login", Component: Login },
       { path: "register", Component: Register },
+      { path: "contact", Component: Contact },
       { path: "*", Component: NotFound },
     ],
   },

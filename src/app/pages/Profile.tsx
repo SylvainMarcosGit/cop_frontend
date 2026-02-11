@@ -34,7 +34,7 @@ export function Profile() {
   });
 
   const badges = [
-    { name: "Membre Actif", color: "bg-blue-100 text-blue-600", icon: "🌟" },
+    { name: "Membre Actif", color: "bg-primary/20 text-primary", icon: "🌟" },
     { name: "Contributeur", color: "bg-green-100 text-green-600", icon: "✍️" },
     { name: "Mentor", color: "bg-purple-100 text-purple-600", icon: "🎓" },
   ];
@@ -233,8 +233,8 @@ export function Profile() {
                       className="flex items-center justify-between p-4 border rounded-lg hover:bg-gray-50"
                     >
                       <div className="flex items-center space-x-4">
-                        <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                          <Calendar className="w-6 h-6 text-blue-600" />
+                        <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
+                          <Calendar className="w-6 h-6 text-primary" />
                         </div>
                         <div>
                           <h3 className="font-medium text-gray-900">
@@ -269,7 +269,7 @@ export function Profile() {
                     >
                       <div className="flex items-center space-x-4">
                         <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                          <BookOpen className="w-6 h-6 text-green-600" />
+                          <BookOpen className="w-6 h-6 text-primary" />
                         </div>
                         <div>
                           <h3 className="font-medium text-gray-900">

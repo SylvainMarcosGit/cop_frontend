@@ -19,6 +19,7 @@ import {
   X, 
   User 
 } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export function Layout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,7 +30,7 @@ export function Layout() {
     { name: "Accueil", href: "/", icon: Home },
     { name: "Événements", href: "/events", icon: Calendar },
     { name: "Ressources", href: "/resources", icon: BookOpen },
-    { name: "Membres", href: "/members", icon: Users },
+    /*{ name: "Membres", href: "/members", icon: Users },*/
   ];
 
   const isActive = (path: string) => {
@@ -45,16 +46,16 @@ export function Layout() {
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">CoP</span>
-              </div>
+              {/* Logo */}
+              <Link to="/" className="flex items-center space-x-2">
+                <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden">
+                  <img src={logo} alt="CoP Logo" className="w-full h-full object-contain" />
+                </div>
               <div className="hidden sm:block">
                 <h1 className="font-semibold text-gray-900">
                   Communauté de Pratiques
                 </h1>
-                <p className="text-xs text-gray-500">IT Community Platform</p>
+              
               </div>
             </Link>
 
@@ -69,7 +70,7 @@ export function Layout() {
                     to={item.href}
                     className={`flex items-center space-x-2 px-4 py-2 rounded-md text-sm transition-colors ${
                       active
-                        ? "bg-blue-50 text-blue-600"
+                        ? "bg-primary/20 text-primary"
                         : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
                     }`}
                   >
@@ -81,7 +82,7 @@ export function Layout() {
             </nav>
 
             {/* User Actions */}
-            <div className="flex items-center space-x-3">
+          {/*  <div className="flex items-center space-x-3">
               {isAuthenticated ? (
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
@@ -126,7 +127,7 @@ export function Layout() {
                 </div>
               )}
 
-              {/* Mobile Menu Button */}
+               Mobile Menu Button
               <Button
                 variant="ghost"
                 size="icon"
@@ -139,7 +140,7 @@ export function Layout() {
                   <Menu className="w-5 h-5" />
                 )}
               </Button>
-            </div>
+            </div>*/}
           </div>
         </div>
 
@@ -157,7 +158,7 @@ export function Layout() {
                     onClick={() => setIsMenuOpen(false)}
                     className={`flex items-center space-x-2 px-3 py-2 rounded-md text-base ${
                       active
-                        ? "bg-blue-50 text-blue-600"
+                        ? "bg-primary/20 text-primary"
                         : "text-gray-600 hover:bg-gray-100"
                     }`}
                   >
@@ -213,17 +214,17 @@ export function Layout() {
               <h3 className="font-semibold text-gray-900 mb-3">Liens utiles</h3>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>
-                  <a href="#" className="hover:text-blue-600">
+                  <a href="#" className="hover:text-primary">
                     Charte de la CoP
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-600">
+                  <a href="#" className="hover:text-primary">
                     FAQ
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-600">
+                  <a href="#" className="hover:text-primary">
                     Conditions d'utilisation
                   </a>
                 </li>

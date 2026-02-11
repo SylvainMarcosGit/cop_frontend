@@ -337,7 +337,7 @@ export function Resources() {
                         </div>
                       </div>
                       <CardTitle className="text-lg flex items-center">
-                        <Icon className="w-5 h-5 mr-2 text-blue-600" />
+                        <Icon className="w-5 h-5 mr-2 text-primary" />
                         {resource.title}
                       </CardTitle>
                       <CardDescription>{resource.description}</CardDescription>
@@ -408,14 +408,14 @@ export function Resources() {
                     <CardHeader>
                       <div className="flex items-start justify-between mb-2">
                         <div className="flex items-center space-x-2">
-                          <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+                          <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">
                             {index + 1}
                           </div>
                           <Badge variant="secondary">{resource.category}</Badge>
                         </div>
                       </div>
                       <CardTitle className="text-lg flex items-center">
-                        <Icon className="w-5 h-5 mr-2 text-blue-600" />
+                        <Icon className="w-5 h-5 mr-2 text-primary" />
                         {resource.title}
                       </CardTitle>
                       <CardDescription>{resource.description}</CardDescription>
@@ -451,8 +451,8 @@ export function Resources() {
                     <CardContent className="pt-6">
                       <div className="flex items-start justify-between">
                         <div className="flex items-start space-x-4 flex-1">
-                          <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                            <Icon className="w-6 h-6 text-blue-600" />
+                          <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <Icon className="w-6 h-6 text-primary" />
                           </div>
                           <div className="flex-1 min-w-0">
                             <div className="flex items-center space-x-2 mb-1">
@@ -501,8 +501,8 @@ export function Resources() {
                   <CardHeader>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-3">
-                        <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                          <Folder className="w-6 h-6 text-blue-600" />
+                        <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
+                          <Folder className="w-6 h-6 text-primary" />
                         </div>
                         <div>
                           <CardTitle className="text-lg">
