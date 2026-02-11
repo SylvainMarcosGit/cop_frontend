@@ -3,6 +3,10 @@ import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
+// Ajout d'un commentaire pour rappeler le dossier de sortie
+// Pour déployer sur Vercel, assurez-vous de déployer le dossier dist/
+// Commande recommandée : vercel --prod dist
+
 export default defineConfig({
   plugins: [
     // The React and Tailwind plugins are both required for Make, even if
