@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
   # Gérer le frontend
 
@@ -9,3 +10,6 @@
 
   Run `npm run dev` to start the development server.
   
+=======
+# cop_frontend
+>>>>>>> 2337103043f08e89ebb5c62f5ef6fa53451344bb
