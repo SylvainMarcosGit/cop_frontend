@@ -34,7 +34,7 @@ export function Home() {
                 Communauté de Pratiques pour la dématérialisation du secteur public
               </h1>
               <p className="text-xl text-white/90 mb-6">
-                Rejoignez une communauté qui réunit les acteurs du numérique afin de favoriser les échanges, le partage d’expériences et de renforcer la collaboration public-privé autour de l’amélioration des services digitaux au Bénin.
+                Rejoignez une communauté qui réunit les acteurs du numérique afin de favoriser les échanges, le partage d’expériences et de renforcer la collaboration public-privé autour de l’amélioration des services digitaux au .
               </p>
               <div className="text-lg text-white/90 mb-8 space-y-2">
                 <p>• Montée en compétences et accès à des ressources</p>
