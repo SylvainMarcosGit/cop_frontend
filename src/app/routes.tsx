@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router";
 import { Layout } from "./components/Layout";
 import { Home } from "./pages/Home";
-import { Events } from "./pages/Events";
 import { Resources } from "./pages/Resources";
 import { Members } from "./pages/Members";
 import { Profile } from "./pages/Profile";
@@ -9,6 +8,8 @@ import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
 import { NotFound } from "./pages/NotFound";
 import { Contact } from "./pages/Contact";
+import { About } from "./pages/About";
+import { Discussions } from "./pages/Discussions";
 
 export const router = createBrowserRouter([
   {
@@ -16,7 +17,8 @@ export const router = createBrowserRouter([
     Component: Layout,
     children: [
       { index: true, Component: Home },
-      { path: "events", Component: Events },
+      { path: "about", Component: About },
+      { path: "discussions", Component: Discussions },
       { path: "resources", Component: Resources },
       { path: "members", Component: Members },
       { path: "profile", Component: Profile },

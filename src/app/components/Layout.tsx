@@ -10,27 +10,32 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
-import { 
-  Home, 
-  Calendar, 
-  BookOpen, 
-  Users, 
-  Menu, 
-  X, 
-  User 
+import {
+  Home,
+  BookOpen,
+  Menu,
+  X,
+  User,
+  Info,
+  MessageSquare
 } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "../../assets/logo.png";
+import asinLogo from "../../assets/partenaire/ASIN.png";
+import mndLogo from "../../assets/partenaire/MND.png";
+import gizLogo from "../../assets/partenaire/Giz.png";
+import adpmeLogo from "../../assets/partenaire/logo_adpme.png";
+import dsiLogo from "../../assets/partenaire/DSI-CLUB-BENIN.jpg";
 
 export function Layout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const location = useLocation();
 
-  const navigation = [
+  const navigation: any[] = [
     { name: "Accueil", href: "/", icon: Home },
-    { name: "Événements", href: "/events", icon: Calendar },
+    { name: "Qui sommes-nous", href: "/about", icon: Info },
+    { name: "Discussions", href: "/discussions", icon: MessageSquare },
     { name: "Ressources", href: "/resources", icon: BookOpen },
-    /*{ name: "Membres", href: "/members", icon: Users },*/
   ];
 
   const isActive = (path: string) => {
@@ -46,16 +51,16 @@ export function Layout() {
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-              {/* Logo */}
-              <Link to="/" className="flex items-center space-x-2">
-                <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden">
-                  <img src={logo} alt="CoP Logo" className="w-full h-full object-contain" />
-                </div>
+            {/* Logo */}
+            <Link to="/" className="flex items-center space-x-2">
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src={logo} alt="CoP Logo" className="w-full h-full object-contain" />
+              </div>
               <div className="hidden sm:block">
                 <h1 className="font-semibold text-gray-900">
                   Communauté de Pratiques
                 </h1>
-              
+
               </div>
             </Link>
 
@@ -68,11 +73,10 @@ export function Layout() {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className={`flex items-center space-x-2 px-4 py-2 rounded-md text-sm transition-colors ${
-                      active
-                        ? "bg-primary/20 text-primary"
-                        : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
-                    }`}
+                    className={`flex items-center space-x-2 px-4 py-2 rounded-md text-sm transition-colors ${active
+                      ? "bg-primary/20 text-primary"
+                      : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
+                      }`}
                   >
                     <Icon className="w-4 h-4" />
                     <span>{item.name}</span>
@@ -82,7 +86,7 @@ export function Layout() {
             </nav>
 
             {/* User Actions */}
-          {/*  <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3">
               {isAuthenticated ? (
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
@@ -119,15 +123,15 @@ export function Layout() {
               ) : (
                 <div className="hidden md:flex items-center space-x-2">
                   <Link to="/login">
-                    <Button variant="ghost">Connexion</Button>
+                    <Button variant="ghost">Se connecter</Button>
                   </Link>
-                  <Link to="/register">
-                    <Button>S'inscrire</Button>
-                  </Link>
+                  <a href="https://forms.office.com/r/82CcMqJf1r" target="_blank" rel="noopener noreferrer">
+                    <Button>Rejoindre la communauté</Button>
+                  </a>
                 </div>
               )}
 
-               Mobile Menu Button
+              {/* Mobile Menu Button */}
               <Button
                 variant="ghost"
                 size="icon"
@@ -140,7 +144,7 @@ export function Layout() {
                   <Menu className="w-5 h-5" />
                 )}
               </Button>
-            </div>*/}
+            </div>
           </div>
         </div>
 
@@ -156,11 +160,10 @@ export function Layout() {
                     key={item.name}
                     to={item.href}
                     onClick={() => setIsMenuOpen(false)}
-                    className={`flex items-center space-x-2 px-3 py-2 rounded-md text-base ${
-                      active
-                        ? "bg-primary/20 text-primary"
-                        : "text-gray-600 hover:bg-gray-100"
-                    }`}
+                    className={`flex items-center space-x-2 px-3 py-2 rounded-md text-base ${active
+                      ? "bg-primary/20 text-primary"
+                      : "text-gray-600 hover:bg-gray-100"
+                      }`}
                   >
                     <Icon className="w-5 h-5" />
                     <span>{item.name}</span>
@@ -171,12 +174,12 @@ export function Layout() {
                 <div className="pt-4 space-y-2">
                   <Link to="/login" onClick={() => setIsMenuOpen(false)}>
                     <Button variant="outline" className="w-full">
-                      Connexion
+                      Se connecter
                     </Button>
                   </Link>
-                  <Link to="/register" onClick={() => setIsMenuOpen(false)}>
-                    <Button className="w-full">S'inscrire</Button>
-                  </Link>
+                  <a href="https://forms.office.com/r/82CcMqJf1r" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
+                    <Button className="w-full">Rejoindre la communauté</Button>
+                  </a>
                 </div>
               )}
             </div>
@@ -189,29 +192,58 @@ export function Layout() {
         <Outlet />
       </main>
 
-      {/* Footer */}
-      <footer className="bg-white border-t border-gray-200 mt-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="font-semibold text-gray-900 mb-3">
-                À propos de la CoP
-              </h3>
-              <p className="text-sm text-gray-600">
-                Une plateforme collaborative pour les professionnels de l'IT
-                favorisant l'échange de connaissances et l'innovation.
-              </p>
+      {/* Partners Section */}
+      <section className="bg-white border-t border-gray-200 mt-16 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-10 text-center">
+            Nos Partenaires
+          </h2>
+          <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-12 lg:gap-20">
+            {/* Financeurs */}
+            <div className="flex flex-col items-center">
+              <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-6">Financeurs</h4>
+              <div className="flex items-center gap-4">
+                <img src={gizLogo} alt="GIZ" className="h-12 object-contain" />
+                <span className="font-bold text-gray-700 text-xl">BMZ</span>
+              </div>
             </div>
-            <div>
-              <h3 className="font-semibold text-gray-900 mb-3">Contact</h3>
+
+            {/* Partenaires nationaux */}
+            <div className="flex flex-col items-center">
+              <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-6">Partenaires nationaux</h4>
+              <div className="flex flex-wrap justify-center items-center gap-6">
+                <img src={mndLogo} alt="MND" className="h-14 object-contain" />
+                <img src={asinLogo} alt="ASIN" className="h-10 object-contain" />
+                <img src={adpmeLogo} alt="ADPME" className="h-12 object-contain" />
+                <span className="font-bold text-gray-700 text-xl">CTD</span>
+              </div>
+            </div>
+
+            {/* Réseau */}
+            <div className="flex flex-col items-center">
+              <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-6">Réseau</h4>
+              <div className="flex items-center gap-4">
+                <img src={dsiLogo} alt="Club DSI Bénin" className="h-16 object-contain" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-50 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center text-center md:text-left md:justify-items-start">
+            <div className="md:ml-auto md:mr-12">
+              <h3 className="font-semibold text-gray-900 mb-4">Contact</h3>
               <p className="text-sm text-gray-600">
                 Email: contact@cop-it.be
                 <br />
                 Tél: +32 2 123 45 67
               </p>
             </div>
-            <div>
-              <h3 className="font-semibold text-gray-900 mb-3">Liens utiles</h3>
+            <div className="md:mr-auto md:ml-12">
+              <h3 className="font-semibold text-gray-900 mb-4">Liens utiles</h3>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>
                   <a href="#" className="hover:text-primary">
