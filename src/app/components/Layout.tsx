@@ -122,9 +122,9 @@ export function Layout() {
                 </DropdownMenu>
               ) : (
                 <div className="hidden md:flex items-center space-x-2">
-                  <Link to="/login">
+                  {/* <Link to="/login">
                     <Button variant="ghost">Se connecter</Button>
-                  </Link>
+                  </Link> */}
                   <a href="https://forms.office.com/r/82CcMqJf1r" target="_blank" rel="noopener noreferrer">
                     <Button>Rejoindre la communauté</Button>
                   </a>
@@ -172,11 +172,11 @@ export function Layout() {
               })}
               {!isAuthenticated && (
                 <div className="pt-4 space-y-2">
-                  <Link to="/login" onClick={() => setIsMenuOpen(false)}>
+                  {/* <Link to="/login" onClick={() => setIsMenuOpen(false)}>
                     <Button variant="outline" className="w-full">
                       Se connecter
                     </Button>
-                  </Link>
+                  </Link> */}
                   <a href="https://forms.office.com/r/82CcMqJf1r" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
                     <Button className="w-full">Rejoindre la communauté</Button>
                   </a>
