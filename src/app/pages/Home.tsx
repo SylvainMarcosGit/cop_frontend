@@ -7,7 +7,13 @@ import {
   Network,
   ArrowRight,
   Sparkles,
-  Linkedin
+  Linkedin,
+  LayoutGrid,
+  Share2,
+  HeartHandshake,
+  GraduationCap,
+  CalendarDays,
+  MessageSquareText
 } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import logo from "../../assets/logo.png";
@@ -34,7 +40,7 @@ export function Home() {
                 Communauté de Pratiques pour la dématérialisation du secteur public
               </h1>
               <p className="text-xl text-white/90 mb-6">
-                Rejoignez une communauté qui réunit les acteurs du numérique afin de favoriser les échanges, le partage d’expériences et de renforcer la collaboration public-privé autour de l’amélioration des services digitaux au .
+               Une communauté qui réunit les acteurs du numérique béninois afin de favoriser les échanges, le partage d’expériences et la collaboration public-privé pour améliorer les services digitaux du secteur public.
               </p>
               <div className="text-lg text-white/90 mb-8 space-y-2">
                 <p>• Montée en compétences et accès à des ressources</p>
@@ -52,7 +58,7 @@ export function Home() {
                   {/* Lien LinkedIn à replacer dynamiquement si on trouve le lien officiel */}
                   <Button
                     size="lg"
-                    variant="outline"
+                    variant=""
                     className="border-white text-white hover:bg-white/10 w-full sm:w-auto"
                   >
                     <Linkedin className="w-5 h-5 mr-2" />
@@ -85,7 +91,7 @@ export function Home() {
               Mise en réseau des acteurs IT béninois et partage d'opportunités professionnelles.
             </p>
           </div>
-
+{/*
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
               <CardHeader>
@@ -128,7 +134,94 @@ export function Home() {
                 </CardDescription>
               </CardContent>
             </Card>
+          </div> */}
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="bg-white">
+              <CardHeader>
+                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-2">
+                  <LayoutGrid className="w-5 h-5 text-blue-600" />
+                </div>
+                <CardTitle>Espace dynamique</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Offrir un espace interactif et intuitif pour faciliter les échanges et la collaboration entre les membres
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white">
+              <CardHeader>
+                <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mb-2">
+                  <Share2 className="w-5 h-5 text-green-600" />
+                </div>
+                <CardTitle>Partage d'expériences</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Favoriser le partage d'expériences, réussites et apprentissages entre professionnels de l'IT
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white">
+              <CardHeader>
+                <div className="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center mb-2">
+                  <HeartHandshake className="w-5 h-5 text-teal-600" />
+                </div>
+                <CardTitle>Cohésion & engagement</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Renforcer la cohésion et l'engagement autour des thématiques IT et services
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white">
+              <CardHeader>
+                <div className="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center mb-2">
+                  <GraduationCap className="w-5 h-5 text-pink-600" />
+                </div>
+                <CardTitle>Compétences</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Contribuer à la montée en compétences et à la professionnalisation de la communauté
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white">
+              <CardHeader>
+                <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center mb-2">
+                  <CalendarDays className="w-5 h-5 text-amber-600" />
+                </div>
+                <CardTitle>Événements</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Faciliter la communication sur les événements, workshops et rencontres virtuelles
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white">
+              <CardHeader>
+                <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mb-2">
+                  <MessageSquareText className="w-5 h-5 text-purple-600" />
+                </div>
+                <CardTitle>Discussions</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Créer des espaces de discussion thématiques pour approfondir les sujets techniques
+                </CardDescription>
+              </CardContent>
+            </Card>
           </div>
+        </div>
         </div>
       </section>
 
