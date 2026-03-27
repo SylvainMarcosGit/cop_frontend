@@ -91,7 +91,7 @@ export function Home() {
               Mise en réseau des acteurs IT béninois et partage d'opportunités professionnelles.
             </p>
           </div>
-{/*
+        {/*
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
               <CardHeader>

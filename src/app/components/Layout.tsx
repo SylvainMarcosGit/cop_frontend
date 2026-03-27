@@ -23,8 +23,9 @@ import logo from "../../assets/logo.png";
 import asinLogo from "../../assets/partenaire/ASIN.png";
 import mndLogo from "../../assets/partenaire/MND.png";
 import gizLogo from "../../assets/partenaire/Giz.png";
-import adpmeLogo from "../../assets/partenaire/logo_adpme.png";
+import copalecLogo from "../../assets/partenaire/ca.jpg";
 import dsiLogo from "../../assets/partenaire/DSI-CLUB-BENIN.jpg";
+import ctdLogo from "../../assets/partenaire/ctd.webp";
 
 export function Layout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -195,35 +196,28 @@ export function Layout() {
       {/* Partners Section */}
       <section className="bg-white border-t border-gray-200 mt-16 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-10 text-center">
-            Nos Partenaires
-          </h2>
-          <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-12 lg:gap-20">
-            {/* Financeurs */}
-            <div className="flex flex-col items-center">
-              <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-6">Financeurs</h4>
-              <div className="flex items-center gap-4">
-                <img src={gizLogo} alt="GIZ" className="h-12 object-contain" />
-                <span className="font-bold text-gray-700 text-xl">BMZ</span>
+          <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8">
+            {/* Logo 1 */}
+            <div className="flex items-center">
+              <img src={copalecLogo} alt="Coopération Allemande" className="h-24 object-contain" />
+            </div>
+
+            {/* Mise en œuvre group */}
+            <div className="flex flex-col items-center sm:items-start gap-4">
+              <span className="text-xs font-medium text-gray-500 uppercase tracking-wider">Mise en œuvre par</span>
+              <div className="flex items-center gap-8">
+                <img src={gizLogo} alt="GIZ" className="h-10 object-contain" />
+                <img src={ctdLogo} alt="CTD" className="h-20 object-contain" />
               </div>
             </div>
 
-            {/* Partenaires nationaux */}
-            <div className="flex flex-col items-center">
-              <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-6">Partenaires nationaux</h4>
-              <div className="flex flex-wrap justify-center items-center gap-6">
-                <img src={mndLogo} alt="MND" className="h-14 object-contain" />
-                <img src={asinLogo} alt="ASIN" className="h-10 object-contain" />
-                <img src={adpmeLogo} alt="ADPME" className="h-12 object-contain" />
-                <span className="font-bold text-gray-700 text-xl">CTD</span>
-              </div>
-            </div>
-
-            {/* Réseau */}
-            <div className="flex flex-col items-center">
-              <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-6">Réseau</h4>
-              <div className="flex items-center gap-4">
-                <img src={dsiLogo} alt="Club DSI Bénin" className="h-16 object-contain" />
+            {/* En coopération avec group */}
+            <div className="flex flex-col items-center sm:items-start gap-4">
+              <span className="text-xs font-medium text-gray-500 uppercase tracking-wider">En coopération avec</span>
+              <div className="flex items-center gap-8">
+                <img src={mndLogo} alt="MND" className="h-12 object-contain" />
+                <img src={asinLogo} alt="ASIN" className="h-8 object-contain" />
+                <img src={dsiLogo} alt="Club DSI Bénin" className="h-20 object-contain" />
               </div>
             </div>
           </div>
