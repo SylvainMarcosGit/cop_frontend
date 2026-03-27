@@ -23,7 +23,7 @@ import logo from "../../assets/logo.png";
 import asinLogo from "../../assets/partenaire/ASIN.png";
 import mndLogo from "../../assets/partenaire/MND.png";
 import gizLogo from "../../assets/partenaire/Giz.png";
-import copalecLogo from "../../assets/partenaire/ca.jpg";
+import copalecLogo from "../../assets/partenaire/Ca.jpg";
 import dsiLogo from "../../assets/partenaire/DSI-CLUB-BENIN.jpg";
 import ctdLogo from "../../assets/partenaire/ctd.webp";
 
