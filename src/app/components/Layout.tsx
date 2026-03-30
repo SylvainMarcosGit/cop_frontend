@@ -200,15 +200,15 @@ export function Layout() {
           <div className="flex flex-nowrap justify-center items-center gap-x-8 gap-y-6 overflow-hidden">
             {/* Logo 1 */}
             <div className="flex items-center shrink-0">
-              <img src={copalecLogo} alt="Coopération Allemande" className="h-16 object-contain" />
+              <img src={copalecLogo} alt="Coopération Allemande" className="h-20 object-contain" />
             </div>
 
             {/* Mise en œuvre group */}
             <div className="flex flex-col items-center shrink-0 gap-3">
               <span className="text-[10px] font-medium text-gray-500 uppercase tracking-widest">Mise en œuvre par</span>
               <div className="flex items-center gap-6">
-                <img src={gizLogo} alt="GIZ" className="h-8 object-contain" />
-                <img src={ctdLogo} alt="CTD" className="h-12 object-contain" />
+                <img src={gizLogo} alt="GIZ" className="h-20 object-contain" />
+                <img src={ctdLogo} alt="CTD" className="h-20 object-contain" />
               </div>
             </div>
 
@@ -217,7 +217,7 @@ export function Layout() {
               <span className="text-[10px] font-medium text-gray-500 uppercase tracking-widest">En coopération avec</span>
               <div className="flex items-center gap-6">
                 <img src={mndLogo} alt="MND" className="h-10 object-contain" />
-                <img src={asinLogo} alt="ASIN" className="h-6 object-contain" />
+                <img src={asinLogo} alt="ASIN" className="h-12 object-contain" />
                 <img src={adpmeLogo} alt="ADPME" className="h-6 object-contain" />
                 <img src={dsiLogo} alt="Club DSI Bénin" className="h-14 object-contain" />
               </div>
