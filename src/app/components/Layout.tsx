@@ -36,7 +36,7 @@ export function Layout() {
   const navigation: any[] = [
     { name: "Accueil", href: "/", icon: Home },
     { name: "Qui sommes-nous", href: "/about", icon: Info },
-    { name: "Discussions", href: "/discussions", icon: MessageSquare },
+    //{ name: "Discussions", href: "/discussions", icon: MessageSquare },
     { name: "Ressources", href: "/resources", icon: BookOpen },
   ];
 
@@ -80,7 +80,6 @@ export function Layout() {
                       : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
                       }`}
                   >
-                    <Icon className="w-4 h-4" />
                     <span>{item.name}</span>
                   </Link>
                 );
@@ -233,9 +232,9 @@ export function Layout() {
             <div className="md:ml-auto md:mr-12">
               <h3 className="font-semibold text-gray-900 mb-4">Contact</h3>
               <p className="text-sm text-gray-600">
-                Email: contact@cop-it.be
+                Email: contact@clubdsibenin.bj
                 <br />
-                Tél: +32 2 123 45 67
+                Tél: 229 0191475555 | 0199200404
               </p>
             </div>
             <div className="md:mr-auto md:ml-12">
