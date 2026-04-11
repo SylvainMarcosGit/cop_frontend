@@ -199,15 +199,15 @@ export function Layout() {
           <div className="flex flex-wrap justify-center items-end gap-x-12 gap-y-10">
             {/* Logo Coopération Allemande */}
             <div className="flex items-center shrink-0">
-              <img src={copalecLogo} alt="Coopération Allemande" className="h-16 object-contain" />
+              <img src={copalecLogo} alt="Coopération Allemande" className="h-20 object-contain" />
             </div>
 
             {/* Mise en œuvre group */}
             <div className="flex flex-col items-center gap-4">
               <span className="text-[11px] font-medium text-gray-500">Mise en œuvre par</span>
               <div className="flex items-center gap-8">
-                <img src={gizLogo} alt="GIZ" className="h-10 object-contain" />
-                <img src={ctdLogo} alt="CTD" className="h-12 object-contain" />
+                <img src={gizLogo} alt="GIZ" className="h-16 object-contain" />
+              
               </div>
             </div>
 
