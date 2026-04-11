@@ -29,7 +29,7 @@ export function Home() {
           <img src={logo} alt="Watermark" className="w-96 h-96 object-contain" />
         </div>
 
-        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm mb-6">
@@ -37,7 +37,7 @@ export function Home() {
                 <span className="text-sm">Plateforme collaborative au Bénin</span>
               </div>
               <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-                Communauté de Pratiques pour la dématérialisation du secteur public
+                Plateforme collaborative pour la dématérialisation du secteur public
               </h1>
               <p className="text-xl text-white/90 mb-6">
                Une communauté qui réunit les acteurs du numérique béninois afin de favoriser les échanges, le partage d’expériences et la collaboration public-privé pour améliorer les services digitaux du secteur public.
@@ -46,6 +46,7 @@ export function Home() {
                 <p>• Montée en compétences et accès à des ressources</p>
                 <p>• Partage d'opportunités professionnelles</p>
                 <p>• Collaboration DSI – ESN</p>
+                <p>• Mise en réseau des acteurs IT béninois</p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="https://forms.office.com/r/82CcMqJf1r" target="_blank" rel="noopener noreferrer">
@@ -61,7 +62,7 @@ export function Home() {
                     variant=""
                     className="border-white text-white hover:bg-white/10 w-full sm:w-auto"
                   >
-                    <Linkedin className="w-5 h-5 mr-2" />
+                 
                     Notre LinkedIn
                   </Button>
                 </a>

@@ -31,14 +31,12 @@ export function Resources() {
             <a href="https://forms.office.com/r/82CcMqJf1r" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="px-8">
                 <Users className="w-5 h-5 mr-2" />
-                Rejoindre la communauté
+                Rejoindre la communauté pour accéder aux ressources 
+                <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </a>
             <a href="https://giz-chat.vercel.app/" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" size="lg">
-                Se connecter à la ressourcerie GIZ
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
+             
             </a>
           </div>
         </div>

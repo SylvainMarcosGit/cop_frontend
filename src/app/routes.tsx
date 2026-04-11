@@ -9,6 +9,7 @@ import { Register } from "./pages/Register";
 import { NotFound } from "./pages/NotFound";
 import { Contact } from "./pages/Contact";
 import { About } from "./pages/About";
+import { Charte } from "./pages/Charte";
 import { Discussions } from "./pages/Discussions";
 
 export const router = createBrowserRouter([
@@ -18,6 +19,7 @@ export const router = createBrowserRouter([
     children: [
       { index: true, Component: Home },
       { path: "about", Component: About },
+      { path: "charte", Component: Charte },
       { path: "discussions", Component: Discussions },
       { path: "resources", Component: Resources },
       { path: "members", Component: Members },

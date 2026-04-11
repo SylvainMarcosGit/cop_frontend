@@ -58,33 +58,24 @@ const values = [
     icon: Globe,
     title: "Ouverture",
     description: "Une communauté ouverte à tous les acteurs du numérique béninois, public comme privé.",
-    color: "from-emerald-500/10 to-emerald-600/5 border-emerald-200",
-    iconColor: "text-emerald-600",
-    iconBg: "bg-emerald-100",
   },
   {
     icon: Shield,
     title: "Crédibilité",
     description: "Soutenue par GIZ/BMZ, MND et les institutions nationales, la CoP bénéficie d'un ancrage institutionnel fort.",
-    color: "from-blue-500/10 to-blue-600/5 border-blue-200",
-    iconColor: "text-blue-600",
-    iconBg: "bg-blue-100",
   },
   {
     icon: Award,
     title: "Excellence",
     description: "Promouvoir des standards élevés dans le développement et la livraison des services numériques publics.",
-    color: "from-amber-500/10 to-amber-600/5 border-amber-200",
-    iconColor: "text-amber-600",
-    iconBg: "bg-amber-100",
   },
 ];
 
 const governanceSteps = [
   {
     num: "01",
-    title: "BenInnovation / GIZ",
-    description: "Porteur du projet, financement BMZ (Ministère fédéral allemand de la Coopération économique).",
+    title: "Club DSI Bénin",
+    description: "Gestionnaire opérationnel de la plateforme CoP depuis mars 2026 — Maison des DSI, St Michel C/510, Cotonou.",
   },
   {
     num: "02",
@@ -93,11 +84,16 @@ const governanceSteps = [
   },
   {
     num: "03",
-    title: "Club DSI Bénin",
-    description: "Gestionnaire opérationnel de la plateforme CoP depuis mars 2026 — Maison des DSI, St Michel C/510, Cotonou.",
+    title: "ASIN",
+    description: "Partenaire national et technique apportant expertise et support aux initiatives numériques.",
   },
   {
     num: "04",
+    title: "ADPME",
+    description: "Partenaire national engagé dans l'accompagnement des entreprises numériques béninoises.",
+  },
+  {
+    num: "05",
     title: "Communauté de membres",
     description: "DSI des ministères, ESN privées, professionnels IT du Bénin — acteurs décisionnels de la CoP.",
   },
@@ -139,17 +135,19 @@ export function About() {
         <div className="absolute -bottom-20 -left-20 w-72 h-72 rounded-full bg-white/5 pointer-events-none" />
         <div className="absolute top-1/2 left-1/3 w-40 h-40 rounded-full bg-[#2fa77a]/20 pointer-events-none" />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-          <div className="max-w-3xl">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+          <div className="max-w-5xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 rounded-full px-4 py-1.5 text-sm font-medium mb-6">
               <Building2 className="w-4 h-4" />
               Qui sommes-nous ?
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Communauté de Pratiques pour la{" "}
-              <span className="text-[#2fa77a]">dématérialisation</span> du secteur public au Bénin
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-bold leading-tight tracking-tight mb-6">
+              Communauté de Pratiques pour la
+              <span className="block text-[#2fa77a]">dématérialisation</span>
+              <span className="block">du secteur public</span>
+              <span className="block">au Bénin</span>
             </h1>
-            <p className="text-lg md:text-xl text-white/75 leading-relaxed mb-8 max-w-2xl">
+            <p className="text-lg md:text-xl text-white/75 leading-relaxed mb-8 max-w-3xl">
               Rejoignez une communauté qui réunit les acteurs du numérique afin de favoriser les échanges, le partage
               d'expériences et de renforcer la collaboration public-privé autour de l'amélioration des services
               digitaux au Bénin.
@@ -157,21 +155,8 @@ export function About() {
             <div className="flex flex-wrap gap-4">
               <a href="https://forms.office.com/r/82CcMqJf1r" target="_blank" rel="noopener noreferrer">
                 <Button className="bg-[#2fa77a] hover:bg-[#2fa77a]/90 text-white font-semibold px-6 py-3 h-auto">
-                  Rejoindre la communauté
+                  Rejoindre la communauté pour accéder aux ressources
                   <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-              </a>
-              <a
-                href="https://www.linkedin.com/company/club-dsi-benin"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  variant="outline"
-                  className="border-white/40 text-[#054e38] hover:bg-[#054e38] hover:text-white font-semibold px-6 py-3 h-auto"
-                >
-                  <Linkedin className="w-4 h-4 mr-2" />
-                  Suivre sur LinkedIn
                 </Button>
               </a>
             </div>
@@ -205,7 +190,7 @@ export function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 text-[#054e38] font-semibold text-sm uppercase tracking-wider mb-4">
-                <Users className="w-4 h-4" />
+              
                 Notre organisation
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Le Club DSI Bénin</h2>
@@ -269,7 +254,6 @@ export function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <div className="inline-flex items-center gap-2 text-[#054e38] font-semibold text-sm uppercase tracking-wider mb-4">
-              <Target className="w-4 h-4" />
               Ce que nous faisons
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Notre Mission</h2>
@@ -307,7 +291,7 @@ export function About() {
           <div className="grid md:grid-cols-2 gap-16 items-start">
             <div>
               <div className="inline-flex items-center gap-2 text-[#054e38] font-semibold text-sm uppercase tracking-wider mb-4">
-                <Shield className="w-4 h-4" />
+              
                 Structure & Gouvernance
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -340,7 +324,7 @@ export function About() {
             {/* Objectives */}
             <div>
               <div className="inline-flex items-center gap-2 text-[#054e38] font-semibold text-sm uppercase tracking-wider mb-4">
-                <Target className="w-4 h-4" />
+               
                 Objectifs Institutionnels
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -357,12 +341,17 @@ export function About() {
                 ))}
               </ul>
 
-              <div className="mt-10 p-5 rounded-xl bg-[#054e38]/5 border border-[#054e38]/10">
-                <p className="text-sm font-semibold text-[#054e38] mb-1">⚠️ Alignement stratégique</p>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  La CoP est recentrée sur la <strong>dématérialisation du secteur public</strong> et la collaboration
-                  <strong> DSI–ESN</strong>. Elle n'a pas vocation à devenir une plateforme numérique généraliste.
-                </p>
+              <div className="mt-10 p-5 rounded-xl bg-[#054e38]/5 border border-[#054e38]/10 flex items-start gap-4">
+                <div className="flex-shrink-0 rounded-2xl bg-[#2fa77a]/10 p-3 text-[#054e38]">
+                  <Target className="w-5 h-5" />
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-[#054e38] mb-1">Alignement stratégique</p>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    La CoP est recentrée sur la <strong>dématérialisation du secteur public</strong> et la collaboration
+                    <strong> DSI–ESN</strong>. Elle n'a pas vocation à devenir une plateforme numérique généraliste.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -384,10 +373,10 @@ export function About() {
               return (
                 <div
                   key={v.title}
-                  className={`rounded-2xl bg-gradient-to-br ${v.color} border p-8 hover:scale-[1.02] transition-transform duration-300`}
+                  className="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-shadow duration-300 hover:shadow-xl"
                 >
-                  <div className={`w-14 h-14 rounded-xl ${v.iconBg} flex items-center justify-center mb-5`}>
-                    <Icon className={`w-7 h-7 ${v.iconColor}`} />
+                  <div className="w-14 h-14 rounded-2xl bg-[#2fa77a]/10 flex items-center justify-center mb-5">
+                    <Icon className="w-7 h-7 text-[#054e38]" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">{v.title}</h3>
                   <p className="text-gray-600 leading-relaxed">{v.description}</p>

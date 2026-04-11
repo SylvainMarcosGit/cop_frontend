@@ -248,17 +248,17 @@ export function Layout() {
               <h3 className="font-semibold text-gray-900 mb-4">Liens utiles</h3>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>
-                  <a href="#" className="hover:text-primary">
+                  <Link to="/charte" className="hover:text-primary">
                     Charte de la CoP
+                  </Link>
+                </li>
+                <li>
+                  <a href="https://giz-chat.vercel.app/" className="hover:text-primary">
+                    Moteur de recherche ASIN
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary">
-                    FAQ
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary">
+                  <a href="https://clubdsibenin.bj/conditions-generales" className="hover:text-primary">
                     Conditions d'utilisation
                   </a>
                 </li>
