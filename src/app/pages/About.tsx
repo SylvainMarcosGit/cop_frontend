@@ -141,7 +141,7 @@ export function About() {
               <Building2 className="w-4 h-4" />
               Qui sommes-nous ?
             </div>
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-bold leading-tight tracking-tight mb-6">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-bold leading-tight tracking-tight mb-6 text-center">
               Communauté de Pratiques pour la
               <span className="block text-[#2fa77a] text-center ">dématérialisation</span>
               <span className="block text-center">du secteur public au Bénin</span>
