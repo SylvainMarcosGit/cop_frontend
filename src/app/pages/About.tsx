@@ -135,26 +135,26 @@ export function About() {
         <div className="absolute -bottom-20 -left-20 w-72 h-72 rounded-full bg-white/5 pointer-events-none" />
         <div className="absolute top-1/2 left-1/3 w-40 h-40 rounded-full bg-[#2fa77a]/20 pointer-events-none" />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
-          <div className="max-w-5xl">
+        <div className="relative w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+          <div className="w-full">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 rounded-full px-4 py-1.5 text-sm font-medium mb-6">
               <Building2 className="w-4 h-4" />
               Qui sommes-nous ?
             </div>
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-bold leading-tight tracking-tight mb-6">
               Communauté de Pratiques pour la
-              <span className="block text-[#2fa77a]">dématérialisation</span>
-              <span className="block">du secteur public</span>
-              <span className="block">au Bénin</span>
+              <span className="block text-[#2fa77a] text-center ">dématérialisation</span>
+              <span className="block text-center">du secteur public au Bénin</span>
+             
             </h1>
-            <p className="text-lg md:text-xl text-white/75 leading-relaxed mb-8 max-w-3xl">
+            <p className="text-lg md:text-xl text-white/75 leading-relaxed mb-8 max-w-4xl text-center mx-auto">
               Rejoignez une communauté qui réunit les acteurs du numérique afin de favoriser les échanges, le partage
               d'expériences et de renforcer la collaboration public-privé autour de l'amélioration des services
               digitaux au Bénin.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 text-center justify-center">
               <a href="https://forms.office.com/r/82CcMqJf1r" target="_blank" rel="noopener noreferrer">
-                <Button className="bg-[#2fa77a] hover:bg-[#2fa77a]/90 text-white font-semibold px-6 py-3 h-auto">
+                <Button className="bg-[#2fa77a] hover:bg-[#2fa77a]/90 text-white font-semibold px-6 py-3 h-auto text-center flex items-center gap-2">
                   Rejoindre la communauté pour accéder aux ressources
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -322,7 +322,7 @@ export function About() {
             </div>
 
             {/* Objectives */}
-            <div>
+            <div className="flex flex-col h-full">
               <div className="inline-flex items-center gap-2 text-[#054e38] font-semibold text-sm uppercase tracking-wider mb-4">
                
                 Objectifs Institutionnels
@@ -341,7 +341,7 @@ export function About() {
                 ))}
               </ul>
 
-              <div className="mt-10 p-5 rounded-xl bg-[#054e38]/5 border border-[#054e38]/10 flex items-start gap-4">
+              <div className="mt-36 p-5 rounded-xl bg-[#054e38]/5 border border-[#054e38]/10 flex items-start gap-4">
                 <div className="flex-shrink-0 rounded-2xl bg-[#2fa77a]/10 p-3 text-[#054e38]">
                   <Target className="w-5 h-5" />
                 </div>
