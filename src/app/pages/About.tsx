@@ -196,8 +196,8 @@ export function About() {
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Le Club DSI Bénin</h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-4">
                 Le <strong>Club DSI Bénin</strong> est l'association regroupant les Directeurs des Systèmes d'Information
-                et les professionnels de l'IT du Bénin. <strong>Depuis mars 2026</strong>, il assure la gestion
-                opérationnelle de la plateforme CoP, garantissant sa soutenabilité locale et son ancrage institutionnel.
+                et les professionnels de l'IT du Bénin. <strong>Depuis mars 2026, il assure la gestion
+                opérationnelle de la plateforme CoP,</strong> garantissant sa soutenabilité locale et son ancrage institutionnel.
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
                 Initié dans le cadre du projet <strong>BenInnovation</strong> financé par le Ministère Fédéral Allemand de la Coopération Economique et du Développement (BMZ) et mis en œuvre par
