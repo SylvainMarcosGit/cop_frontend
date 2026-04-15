@@ -197,17 +197,12 @@ export function Layout() {
       <section className="bg-white border-t border-gray-200 mt-16 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-center items-end gap-x-12 gap-y-10">
-            {/* Logo Coopération Allemande */}
-            <div className="flex items-center shrink-0">
-              <img src={copalecLogo} alt="Coopération Allemande" className="h-22 object-contain" />
-            </div>
-
             {/* Mise en œuvre group */}
             <div className="flex flex-col items-center gap-4">
               <span className="text-[11px] font-medium text-gray-500">Mise en œuvre par</span>
               <div className="flex items-center gap-8">
-                <img src={gizLogo} alt="GIZ" className="h-20 object-contain" />
-              
+                <img src={copalecLogo} alt="Coopération Allemande" className="h-12 md:h-14 object-contain" />
+                <img src={gizLogo} alt="GIZ" className="h-12 md:h-14 object-contain" />
               </div>
             </div>
 
@@ -215,9 +210,9 @@ export function Layout() {
             <div className="flex flex-col items-center gap-4">
               <span className="text-[11px] font-medium text-gray-500">Partenaires nationaux</span>
               <div className="flex items-center gap-8">
-                <img src={mndLogo} alt="MND" className="h-12 object-contain" />
-                <img src={adpmeLogo} alt="ADPME" className="h-10 object-contain" />
-                <img src={asinLogo} alt="ASIN" className="h-12 object-contain" />
+                <img src={mndLogo} alt="MND" className="h-12 md:h-14 object-contain" />
+                <img src={adpmeLogo} alt="ADPME" className="h-10 md:h-12 object-contain" />
+                <img src={asinLogo} alt="ASIN" className="h-12 md:h-14 object-contain" />
               </div>
             </div>
 
@@ -225,7 +220,7 @@ export function Layout() {
             <div className="flex flex-col items-center gap-4">
               <span className="text-[11px] font-medium text-gray-500">Réseau</span>
               <div className="flex items-center">
-                <img src={dsiLogo} alt="Club DSI Bénin" className="h-14 object-contain" />
+                <img src={dsiLogo} alt="Club DSI Bénin" className="h-12 md:h-14 object-contain" />
               </div>
             </div>
           </div>
