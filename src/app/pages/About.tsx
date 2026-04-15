@@ -62,7 +62,7 @@ const values = [
   {
     icon: Shield,
     title: "Crédibilité",
-    description: "Soutenue par GIZ/BMZ, MND et les institutions nationales, la CoP bénéficie d'un ancrage institutionnel fort.",
+    description: "Soutenue par la coopération allemande et les institutions nationales, la COP bénéficie des partenaires forts.",
   },
   {
     icon: Award,
@@ -79,8 +79,8 @@ const governanceSteps = [
   },
   {
     num: "02",
-    title: "Ministère du Numérique (MND)",
-    description: "Partenaire institutionnel national, ancrage gouvernemental du projet.",
+    title: "Ministère du Numérique et de la Digitalisation (MND)",
+    description: "Partenaire institutionnel principal qui définit la vision du gouvernement pour le secteur du numérique",
   },
   {
     num: "03",
@@ -114,7 +114,7 @@ const partners = {
     { logo: gizLogo, alt: "GIZ", label: "GIZ" },
   ],
   institutionnels: [
-    { logo: mndLogo, alt: "Ministère du Numérique", label: "MND" },
+    { logo: mndLogo, alt: "Ministère du Numérique et de la Digitalisation", label: "MND" },
     { logo: ctdLogo, alt: "CTD", label: "CTD" },
     { logo: asinLogo, alt: "ASIN", label: "ASIN" },
   ],
@@ -200,7 +200,7 @@ export function About() {
                 opérationnelle de la plateforme CoP, garantissant sa soutenabilité locale et son ancrage institutionnel.
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Initié dans le cadre du projet <strong>BenInnovation</strong> financé par le BMZ et mis en œuvre par
+                Initié dans le cadre du projet <strong>BenInnovation</strong> financé par le Ministère Fédéral Allemand de la Coopération Economique et du Développement (BMZ) et mis en œuvre par
                 la <strong>GIZ</strong>, le Club DSI est le gardien de la mission de la CoP : dématérialiser les
                 services publics, renforcer les capacités locales et créer une véritable filière numérique béninoise.
               </p>
@@ -298,8 +298,7 @@ export function About() {
                 Un modèle de gouvernance ancré au Bénin
               </h2>
               <p className="text-gray-600 leading-relaxed mb-8">
-                La CoP est le fruit d'une collaboration internationale portée par la <strong>GIZ/BMZ</strong> et
-                institutionalisée avec le <strong>Ministère du Numérique du Bénin</strong>. Sa gestion opérationnelle a
+                La COP est le fruit d’un projet de coopération internationale financée par la coopération allemande et mise en œuvre en étroite collaboration avec le <strong>Ministère du Numérique et de la Digitalisation (MND)</strong>. Sa gestion opérationnelle a
                 été confiée en mars 2026 au <strong>Club DSI Bénin</strong>, garantissant une appropriation locale
                 durable.
               </p>
