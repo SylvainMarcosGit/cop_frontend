@@ -23,8 +23,6 @@ export function Register() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Mock registration logic
-    console.log("Register:", formData);
   };
 
   const handleChange = (field: string, value: string) => {

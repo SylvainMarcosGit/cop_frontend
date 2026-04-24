@@ -15,8 +15,6 @@ export function Login() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Mock login logic
-    console.log("Login:", { email, password, rememberMe });
   };
 
   return (
